@@ -2,4 +2,4 @@
 playtopay front-end electron UI cross-platform
 
 ## Back End Specs
-[Here](github.com/infernodragon0/playtopaygo)
+[Here](http://www.github.com/infernodragon0/playtopaygo)
