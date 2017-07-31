@@ -4,6 +4,14 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
   <title>PlayToPayElectron</title>
+
+  <!-- ipcRenderer -->
+  <script type='text/javascript'>
+    // In such way we connect ipcRenderer to our page.
+    window.ipcRenderer = require('electron').ipcRenderer;
+    // The ipcRenderer module provides a few methods so you can send events from the render process (web page) to the main process.
+  </script>
+
   <!-- Testing website icons -->
   <link rel="shortcut icon" href="../images/favicon.ico" type="favicon/ico" />
 
@@ -11,10 +19,11 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="../css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="../css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
 </head>
 <body>
   <nav class="light-blue lighten-1" role="navigation">
-    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo"><img src="../images/Logo.png"></a>
+    <div class="nav-wrapper container"><a id="logo-container" href="index.html" class="brand-logo"><img src="../images/Logo.png"></a>
       <ul class="right hide-on-med-and-down">
         <li><a href="#">Navbar Link</a></li>
       </ul>
@@ -28,12 +37,36 @@
   <div class="section no-pad-bot" id="index-banner">
     <div class="container">
       <br><br>
-      <h1 class="header center orange-text">Welcome to PlayToPlay</h1>
+      <div class="leftcontainer">
+      <h1 class="header center orange-text">Login</h1>
       <div class="row center">
-        <h5 class="header col s12 light">Play your games as normal, complete achievements and be rewarded!</h5>
+        <h5 class="header col s12 light">Start earning rewards!</h5>
       </div>
-      <div class="row center">
-        <a href="login.html" id="download-button" class="btn-large waves-effect waves-light orange">Login or Sign Up</a>
+      </div>
+      <div class="rightcontainer">
+
+          <div class="imgcontainer">
+            <img src="../images/Human.png" alt="Avatar" style="display: inline-block;">
+            <br> <br>
+          </div>
+
+          <div class="container">
+            <label><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+
+            <label><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+
+            <button type="submit" class="btn-large waves-effect waves-light orange" onclick="login()">Login</button>
+            
+            <button type="submit" class="btn-large waves-effect waves-light orange" onclick="signup()">Sign Up</button>
+            <br>
+          </div>
+
+          <div class="container">
+            <br>
+            <div class="psw">Forgot <a href="#">password?</a></div>
+          </div>
       </div>
       <br><br>
 
