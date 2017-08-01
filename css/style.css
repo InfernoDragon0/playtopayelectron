@@ -2,6 +2,8 @@
     float: left;
     margin: 5px;
     width: 40%;
+    vertical-align: center;
+
 }
 
 .rightcontainer {

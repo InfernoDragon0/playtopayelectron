@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/InfernoDragon0/playtopayelectron/issues"
   },
-  "homepage": "https://github.com/InfernoDragon0/playtopayelectron#readme"
+  "homepage": "https://github.com/InfernoDragon0/playtopayelectron#readme",
+  "dependencies": {
+    "reactjs": "^1.0.0"
+  }
 }
