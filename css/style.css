@@ -7,6 +7,9 @@
 }
 
 .rightcontainer {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background:rgba(0, 0, 0, .5);
     float: right;
     margin: 5px;
     width: 50%;
@@ -20,6 +23,7 @@
 
 .topbar {
     background-color: grey;
+    height: 75px;
 }
 
 .topbarwlc {
