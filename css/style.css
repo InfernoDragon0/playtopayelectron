@@ -15,6 +15,7 @@
     width: 50%;
     text-align: center;
     display: inline-block;
+    color: white;
 }
 
 .forgotpwd {
@@ -29,4 +30,8 @@
 .topbarwlc {
     text-align: center;
     align-items: center;
+}
+
+.rightcontainer:select {
+    border-bottom-color: white;
 }
