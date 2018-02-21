@@ -3,7 +3,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
-  <title>PlayToPayElectron</title>
+  <title>Aria Launcher</title>
   <!-- Testing website icons -->
   <link rel="shortcut icon" href="../images/favicon.ico" type="favicon/ico" />
 
@@ -12,107 +12,41 @@
   <link href="../css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="../css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
-<body style="background-image:url('../images/wallpaper;.jpg');">
-  <nav class="topbar" role="navigation">
-    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo"><img src="../images/Logo.png"></a>
-      <ul class="right hide-on-med-and-down">
-        <li><a id="logo-container" href="#" class="brand-logo" style="position: relative; zoom: 10%; text-align: center; height: 100%; padding: 5px;"><img src="../images/Setting.png"></a></li>
-      </ul>
-    
-      <ul id="nav-mobile" class="side-nav">
-        <li><a href="#">Navbar Link</a></li>
-      </ul>
-      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-    </div>
-  </nav>
-
+<body style="background-image:url('../images/wallpaper.jpg');">
+  
   <div class="section no-pad-bot" id="index-banner">
     <div class="container" style="background:rgba(0, 0, 0, .5);">
-      <h1 class="header center orange-text" style="text-align: left; font-size: 50px; padding-top: 40px; padding-left: 40px;">News</h1>
+      <h1 class="header center orange-text" style="text-align: left; font-size: 50px; padding-top: 40px; padding-left: 40px;">Login</h1>
       <div class="row center">
-        <h5 class="header col s12 light" style="text-align: left; color: white; padding: 50px; padding-top: 0px;">PlayToPay will be renamed!</h5>
+        <h5 class="header col s12 light" style="text-align: left; color: white; padding-left: 50px; padding-top: 0px;">Start earning rewards</h5>
       </div>
+      
+          <div class="container" sytle="color: white; padding: 10px;">
+            <label><b>Username</b></label>
+            <input type="text" style="border-bottom-color: white; color: white;" placeholder="Enter Username" name="uname" required>
+
+            <label><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required style="color: white">
+
+            <button type="submit" class="btn-large waves-effect waves-light orange" onclick="login()" style="float: center;">Login</button>
+            
+            <a href="signup.html" id="download-button" class="btn-large waves-effect waves-light orange" style="float: center;">Sign Up</a>
+            
+            <br>
+          </div>  
+
+          <div class="container">
+            <br>
+            <div class="psw" style="color: white;">Forgot <a href="#">password?</a></div>
+          </div>
       <div class="row center" style="text-align: right; padding-right: 50px;">
-        <a href="news.html" id="download-button" class="btn-large waves-effect waves-light orange">More details</a>
+        <a href="news.html" id="download-button" class="btn-large waves-effect waves-light orange">useless button for now</a>
       </div>
       <br>
     </div>
   </div>
 
-  <br>
-
-  <div class="container" style="background:rgba(0,0,0, 0.5);">
-    <div class="section">
-
-      <!--   Icon Section   -->
-      <div class="row" style="color:white; padding-left: 20px; padding-right: 20px; text-align: center">
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons">flash_on</i></h2>
-            <h5 class="center">Fastest runner</h5>
-
-            <p class="light">Play 1 match as Tracer.</p>
-          </div>
-        </div>
-
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons">group</i></h2>
-            <h5 class="center">We are stronger together!</h5>
-
-            <p class="light">Play 3 match as Ying.</p>
-          </div>
-        </div>
-
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons">settings</i></h2>
-            <h5 class="center">Mechanic</h5>
-
-            <p class="light">Create a new charactor with the job Mechanic</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <br><br>
-
-  <footer class="page-footer orange">
-    <div class="container">
-      <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text">Company Bio</h5>
-          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
-
-
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Settings</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Connect</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="footer-copyright">
-      <div class="container">
-      Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
-      </div>
-    </div>
-  </footer>
+  
 
 
   <!--  Scripts-->
